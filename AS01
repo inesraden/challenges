@@ -1,0 +1,10 @@
+def bubbleSort(arr): 
+    n = len(arr) 
+    for i in range(n-1): 
+        for x in range(0, n-i-1): 
+            if arr[x] > arr[x+1] : 
+                arr[x], arr[x+1] = arr[x+1], arr[x] 
+arr=[7,6,5,4,3,2,1]
+bubbleSort(arr) 
+for i in range(len(arr)): 
+    print ("%d" %arr[i]),  
